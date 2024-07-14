@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web AR with AR.js</title>
+    <script src="C:\Users\Ahmed\Music\Augmented Reailty\AR.js-master\three.js"></script> <!-- Three.js library -->
+    <script src="C:\Users\Ahmed\Music\Augmented Reailty\AR.js-master\aframe"></script> <!-- AR.js library -->
+</head>
+<body style="margin: 0; overflow: hidden;">
+    <a-scene embedded arjs>
+        <!-- Define your marker with an image and a 3D model -->
+        <a-marker preset="hiro">
+            <!-- Load a 3D model -->
+            <a-entity
+                gltf-model="url(https://raw.githubusercontent.com/techgit838/techgit838.github.io/main/blackhole/scene.gltf)"
+                scale="0.5 0.5 0.5"
+                position="0 0 0"
+            ></a-entity>
+        </a-marker>
+        <!-- Define a camera -->
+        <a-entity camera></a-entity>
+    </a-scene>
+</body>
+</html>
